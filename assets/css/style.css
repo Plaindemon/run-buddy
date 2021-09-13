@@ -269,43 +269,48 @@ section {
 /* MEET THE TRAINERS START */
 /* removed text-align */
 .trainers {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/*Removed width and overflow */
+.trainer {
+  margin: 0 auto 20px auto;
+  background: #024e76;
+  color: #fce138;
+  flex: 1;
   
 }
 
-.trainer {
-  width: 900px;
-  margin: 0 auto 30px auto;
-  background: #024e76;
-  color: #fce138;
-  overflow: auto;
-}
-
 .trainer img {
-  width: 35%;
-  float: left;
+  width: 100%;
+  
 }
 
 .trainer-bio {
-  padding: 35px;
-  float: left;
-  width: 65%;
-}
-
-.trainer-bio h3 {
-  font-size: 32px;
-  margin-bottom: 8px;
-}
-
-.trainer-bio h4 {
-  font-weight: lighter;
-  font-size: 26px;
-  margin-bottom: 25px;
-}
-
-.trainer-bio p {
-  font-size: 17px;
+  padding: 25px;
   line-height: 1.3;
 }
+/* Removed margin declaration*/
+.trainer-bio h3 {
+  font-size: 28px;
+  
+}
+/* changed sizes*/
+.trainer-bio h4 {
+  font-weight: lighter;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+/* Changed line height to trainer-bio */
+.trainer-bio p {
+  font-size: 17px;
+  
+}
+
+
 /* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
