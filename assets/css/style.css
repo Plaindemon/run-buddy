@@ -161,12 +161,13 @@ section {
 
 
 /* SECTION TITLE STYLES START */
+/* removed display, padding, margin-bottom */
 .section-title {
   font-size: 55px;
-  display: inline-block;
-  padding: 0 100px 20px 100px;
+  
+  
   border-bottom: 3px solid;
-  margin-bottom: 35px;
+  
   color: #024e76;
 }
 
@@ -180,23 +181,23 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
-.intro {
-  text-align: center;
-}
+/*removed intro css rule  */
 
+/* added text-align */
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
   width: 80%;
   margin: 0 auto;
   font-size: 20px;
+  text-align: center;
 }
 /* WHAT YOU DO STYLES END */
 
 
 /* WHAT YOU DO STYLES START */
+/* removed text-align declaration */
 .steps { 
-  text-align: center;
   background: #fce138;
 }
 
@@ -226,8 +227,9 @@ section {
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
+/* removed text-align */
 .trainers {
-  text-align: center;
+  
 }
 
 .trainer {
@@ -267,8 +269,8 @@ section {
 /* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
+/* text-align declaration removed */
 .contact {
-  text-align: center;
   background: #024e76;
 }
 
@@ -316,4 +318,9 @@ height: 400px;
 
 .text-right {
   text-align: right;
+}
+
+/* added flex-row rule */
+.flex-row {
+  display: flex;
 }
