@@ -1,3 +1,4 @@
+/* SECONDARY PAGE STYLES */
 .hero {
   background-position: bottom;
   height: auto;
@@ -5,24 +6,16 @@
   margin-bottom: 40px;
 }
 
-/* Hero Second page Style Start */
-.hero-secondary {
-  background-color:black;
-  color: red;
-}
-/* Hero Second Page Style End */
-
-
 .page-title {
+  padding: 0 80px 15px 80px;
+  font-size: 42px;
+  font-weight: 400;
+  font-style: italic;
   color: #fce138;
   display: inline-block;
   border-bottom: 4px solid #fce138;
-  padding: 0 80px 15px 80px;
-  font-weight: normal;
-  font-size: 42px;
-  font-style: italic;
 }
-/* Add secondary-content to this css file to avoid messing with the original css file */
+
 .secondary-content {
   width: 80%;
   margin: 0 auto;
