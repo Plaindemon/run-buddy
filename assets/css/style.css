@@ -11,19 +11,17 @@ body {
 
 
 /* HEADER / NAV BAR STYLES START */
-  /* added display: flex; and added the jusify content, and flex-wrap*/
+
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
-/* Changed the display: inline to flexbox in header tag*/
+
 header h1 {
   font-weight: bold;
-  
   margin: 0;
   font-size: 36px;
   color: #fce138;
@@ -33,9 +31,8 @@ header a {
   text-decoration: none;
   color: #fce138;
 }
-/* Changed the float:right to flexbox in header*/
+
 header nav {
- 
   margin: 7px 0;
 }
 
@@ -46,9 +43,9 @@ header nav ul {
   align-items: center;
   list-style: none;
 }
-
+/* replace margin*/
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -61,21 +58,19 @@ header nav ul li a {
 footer {
   background: #fce138;
   padding: 40px 35px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
-/* removed the display: inline; and added*/
+
 footer h2 {
-  
   color: #024e76;
   font-size: 30px;
   margin: 0;
 }
-/* removed the float: right; and added*/
+
 footer div {
-  
   line-height: 1.5;
   text-align: right;
 }
@@ -91,8 +86,6 @@ section {
 }
 
 /* HERO STYLES START */
-/* removed position and height */
-/* added display, justify-content, flex-wrap */
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
@@ -100,10 +93,25 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
+  align-items: flex-start;
 }
-/* removed position, width, right and bottom */
-/* added width and margin */
+
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+
+}
+
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: #fce138;
+}
+
 .hero-form {
   border: 3px solid #024e76;
   background-color: #fce138;
@@ -142,33 +150,18 @@ section {
   padding: 10px 20px;
   font-size: 16px;
 } 
-/* created .hero-cta rule */
-.hero-cta {
-  width: 35%;
-  text-align: right;
-  margin: 3.5%;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-.hero-cta h2 {
-  font-style: italic;
-  font-size: 55px;
-  color: #fce138;
-}
 /* HERO STYLES END */
 
 
 /* SECTION TITLE STYLES START */
-/* removed display, padding, margin-bottom */
 .section-title {
-  font-size: 55px;
-  
-  
+  font-size: 48px;
   border-bottom: 3px solid;
-  
   color: #024e76;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
 .primary-border {
@@ -181,9 +174,7 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
-/*removed intro css rule  */
 
-/* added text-align */
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
@@ -196,26 +187,9 @@ section {
 
 
 /* WHAT YOU DO STYLES START */
-/* removed text-align declaration */
 .steps { 
   background: #fce138;
 }
-/* removed steps div img span 
-
-.steps div {
-  margin-bottom: 80px;
-}
-
-.steps img {
-  width: 15%;
-  margin: 10px 0;
-} 
-
-.steps span {
-  font-size: 38px;
-}
-
-*/
 
 .step {
   margin: 50px auto;
@@ -228,46 +202,46 @@ section {
   justify-content: space-between;
 }
 
-/* Removed Margin-top and renamed to step from steps */
 .step h3 {
   color: #024e76;
   font-size: 46px;
   flex: 1 30%;
 }
- .step-info {
-   flex: 2 70%;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
- }
+
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 .step-img {
   flex: 1 12%;
   margin-right: 20px;
 }
 
-.step-img img{
+.step-img img {
   max-width: 100%;
 }
 
 .step-text {
   flex: 12;
 }
-/* Restyled text */
+
 .step-text p {
   color: #39a6b2;
   font-size: 18px;
 }
 
-.steps-text h4 {
+.step-text h4 {
   font-size: 26px;
   line-height: 1.5;
   color: #024e76;
 }
+
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
-/* removed text-align */
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -275,46 +249,39 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-/*Removed width and overflow */
+
 .trainer {
-  margin: 0 auto 20px auto;
+  margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 1;
-  
 }
 
 .trainer img {
   width: 100%;
-  
 }
 
 .trainer-bio {
   padding: 25px;
   line-height: 1.3;
 }
-/* Removed margin declaration*/
+
 .trainer-bio h3 {
   font-size: 28px;
-  
 }
-/* changed sizes*/
+
 .trainer-bio h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
 }
-/* Changed line height to trainer-bio */
+
 .trainer-bio p {
   font-size: 17px;
-  
 }
-
-
 /* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
-/* text-align declaration removed */
 .contact {
   background: #024e76;
 }
@@ -322,11 +289,22 @@ section {
 .contact h2 {
   color: #fce138;
 }
-/* Removed width*/
-.contact-info iframe {
-height: 400px;
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-/*Removed all properties except color*/
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
+.contact-info iframe {
+  height: 400px;
+}
+
 .contact-info div {
   color: white;
 }
@@ -343,40 +321,31 @@ height: 400px;
   font-style: normal;
 }
 
-.contact-info a {
-  color: #fce138;
-}
-.contact-info {
-  display: flex;
-  justify-content: space-bewteen;
-  flex-wrap: wrap;
-}
-
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
-
 .contact-form input, .contact-form textarea {
-  border: 1 px solid #024e76;
+  border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color:#024e76;
+  color: #024e76;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
 }
 
-.contact-form button{
+.contact-form button {
   width: 100%;
   border: none;
   background: #fce138;
   color: #024e76;
-  text-aling: center;
-  padding: 15px;
+  text-align: center;
+  padding: 15px 0;
   font-size: 16px;
 }
+
+.contact-info a {
+  color: #fce138;
+}
+
 
 /* REACH OUT STYLES END */
 
@@ -389,7 +358,30 @@ height: 400px;
   text-align: right;
 }
 
-/* added flex-row rule */
 .flex-row {
   display: flex;
+}
+
+/* Media query for smaller desktop screens and smaller*/
+
+@media screen and (max-width: 980px;) {
+  header h1 a {
+   
+  }
+}
+
+/* media query for tablets and smaller */
+
+@media screen and (max-width: 768px){
+  header h1 {
+   
+  }
+}
+
+/* media query for mobile phones and smaller */
+
+@media screen and (max-width: 768px){
+  header h1 {
+    
+  }
 }
